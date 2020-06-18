@@ -89,7 +89,7 @@ class _ContactPageState extends State<ContactPage> {
                 decoration: InputDecoration(labelText: "Idade do paciente"),
                 onChanged: (text){
                   _userEdited = true;
-                  _editedContact.idade = text;
+                  _editedContact.idade = text.toString();
                 },
                 keyboardType: TextInputType.number,
               ),
@@ -122,8 +122,9 @@ class _ContactPageState extends State<ContactPage> {
                 decoration: InputDecoration(labelText: "Data do exame"),
                 onChanged: (text){
                   _userEdited = true;
-                  _editedContact.data = text;
+                  _editedContact.data = text.toString();
                 },
+                keyboardType: TextInputType.datetime,
               ),
             ],
           ),

@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _contactCard(BuildContext context, int index){
     return Card(
-      elevation: 1.0,
+      elevation: 2.0,
       child: Padding(
           padding: EdgeInsets.all(10.0),
           child: Container(
@@ -62,24 +62,25 @@ class _HomePageState extends State<HomePage> {
             width: double.infinity,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                
-                Text( "Nome:" +contacts[index].name,
+                Text("Nome:" +contacts[index].name,
                   style: TextStyle(fontSize: 17.0,),
                 ),
-                Text( "Idade:" +contacts[index].idade,
+                Text("Idade:" +contacts[index].idade,
                   style: TextStyle(fontSize: 17.0,),
                 ),
-                Text( "Sexo:" +contacts[index].sexo,
+                Text("Sexo:" +contacts[index].sexo,
                   style: TextStyle(fontSize: 17.0,),
                 ),
-                Text( "Cor:" +contacts[index].name,
+                Text("Cor:" +contacts[index].cor,
                   style: TextStyle(fontSize: 17.0,),
                 ),
-                Text( "Exame:" +contacts[index].name,
+                Text("Exame:" +contacts[index].exame,
                   style: TextStyle(fontSize: 17.0,),
                 ),
-                Text( "Data:" +contacts[index].name,
+                Text("Data:" +contacts[index].data,
                   style: TextStyle(fontSize: 17.0,),
                 ),
               ],
